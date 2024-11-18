@@ -8,6 +8,6 @@ output "azure_subscription_id" {
 # supabase
 
 output "supabase_project_id" {
-    value        = supabase_project.mwng.id
+    value        = module.db.supabase_project_id
     description = "Supabase project id"
 }
