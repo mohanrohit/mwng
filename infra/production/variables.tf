@@ -1,8 +1,3 @@
-variable "env" {
-    type        = string
-    description = "The environment name (qa, preview, production etc)"
-}
-
 # azure
 
 variable "azure_subscription_id" {
@@ -60,4 +55,30 @@ variable "supabase_project_location" {
 variable "supabase_database_password" {
     type = string
     description = "Supabase database password"
+}
+
+# web app
+
+variable "service_plan_name" {
+    type = string
+}
+
+variable "os" {
+    type = string
+    default = "Linux"
+}
+
+variable "sku" {
+    type = string
+    default = "F1"
+}
+
+variable "worker_count" {
+    type = number
+    default = 1
+}
+
+variable max_worker_count {
+    type = number
+    default = 3
 }
