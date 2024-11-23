@@ -16,7 +16,19 @@ a {
 h1 {
     @apply
     text-2xl
-    font-light
+    font-semibold
+    mb-4;
+}
+
+h2 {
+    @apply
+    text-lg
+    font-semibold
+    my-4;
+}
+
+p {
+    @apply
     mb-4;
 }
 
